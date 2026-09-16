@@ -137,7 +137,10 @@
   });
 
   nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-  languageToggle?.addEventListener("click", () => setLanguage(language === "en" ? "ne" : "en"));
+  languageToggle?.addEventListener("click", () => {
+    setLanguage(language === "en" ? "ne" : "en");
+    closeMenu();
+  });
   serviceToggle?.addEventListener("click", () => {
     setServicesExpanded(serviceToggle.getAttribute("aria-expanded") !== "true");
   });
