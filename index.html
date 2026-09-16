@@ -18,6 +18,7 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="site-config.js" defer></script>
+    <script src="services.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body data-lang="en">
@@ -170,105 +171,8 @@
             </p>
           </div>
 
-          <div class="service-grid" id="service-grid">
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/general-medical-concerns.webp" alt="" width="44" height="44" />
-              <h3 data-en="General medical concerns" data-ne="सामान्य स्वास्थ्य समस्या">General medical concerns</h3>
-              <p data-en="Assessment of new symptoms, fatigue and complex adult health concerns." data-ne="नयाँ लक्षण, थकान र जटिल वयस्क स्वास्थ्य समस्याको मूल्याङ्कन।">
-                Assessment of new symptoms, fatigue and complex adult health concerns.
-              </p>
-            </article>
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/diabetes-metabolic-health.webp" alt="" width="44" height="44" />
-              <h3 data-en="Diabetes & metabolic health" data-ne="मधुमेह र मेटाबोलिक स्वास्थ्य">Diabetes & metabolic health</h3>
-              <p data-en="Blood-sugar review, treatment monitoring and practical daily-life plans." data-ne="रगतमा चिनीको मात्रा जाँच, उपचारको अनुगमन र दैनिक जीवनका लागि व्यावहारिक योजना।">
-                Blood-sugar review, treatment monitoring and practical daily-life plans.
-              </p>
-            </article>
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/blood-pressure-heart-risk.webp" alt="" width="44" height="44" />
-              <h3 data-en="Blood pressure & heart risk" data-ne="रक्तचाप र मुटुको जोखिम">Blood pressure & heart risk</h3>
-              <p data-en="Hypertension review, risk assessment, medicine monitoring and prevention guidance." data-ne="उच्च रक्तचापको समीक्षा, जोखिम मूल्याङ्कन, औषधि अनुगमन र रोकथामसम्बन्धी सल्लाह।">
-                Hypertension review, risk assessment, medicine monitoring and prevention guidance.
-              </p>
-            </article>
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/thyroid-hormonal-concerns.webp" alt="" width="44" height="44" />
-              <h3 data-en="Thyroid & hormonal concerns" data-ne="थाइराइड र हर्मोनसम्बन्धी समस्या">Thyroid & hormonal concerns</h3>
-              <p data-en="Interpretation of thyroid tests, symptom review and ongoing treatment monitoring." data-ne="थाइराइड जाँचको व्याख्या, लक्षणको समीक्षा र उपचारको निरन्तर अनुगमन।">
-                Interpretation of thyroid tests, symptom review and ongoing treatment monitoring.
-              </p>
-            </article>
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/respiratory-health.webp" alt="" width="44" height="44" />
-              <h3 data-en="Respiratory health" data-ne="श्वासप्रश्वास स्वास्थ्य">Respiratory health</h3>
-              <p data-en="Evaluation of cough, breathing concerns and common long-term respiratory conditions." data-ne="खोकी, श्वासप्रश्वास समस्या तथा दीर्घकालीन फोक्सोसम्बन्धी अवस्थाको मूल्याङ्कन।">
-                Evaluation of cough, breathing concerns and common long-term respiratory conditions.
-              </p>
-            </article>
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/fever-infections.webp" alt="" width="44" height="44" />
-              <h3 data-en="Fever & infections" data-ne="ज्वरो र संक्रमण">Fever & infections</h3>
-              <p data-en="Assessment of fever and infections, with in-person evaluation when needed." data-ne="ज्वरो र संक्रमणको मूल्याङ्कन; आवश्यक परे प्रत्यक्ष परीक्षण।">
-                Assessment of fever and infections, with in-person evaluation when needed.
-              </p>
-            </article>
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/digestive-liver-concerns.webp" alt="" width="44" height="44" />
-              <h3 data-en="Digestive & liver concerns" data-ne="पाचन र कलेजोसम्बन्धी समस्या">Digestive & liver concerns</h3>
-              <p data-en="Review of common digestive symptoms, fatty liver and related test results." data-ne="सामान्य पाचन लक्षण, फ्याटी लिभर र सम्बन्धित जाँच नतिजाको समीक्षा।">
-                Review of common digestive symptoms, fatty liver and related test results.
-              </p>
-            </article>
-            <article class="service-item">
-              <img class="service-icon" src="assets/service-images/long-term-follow-up.webp" alt="" width="44" height="44" />
-              <h3 data-en="Long-term follow-up" data-ne="दीर्घकालीन फलो-अप">Long-term follow-up</h3>
-              <p data-en="Ongoing review of chronic conditions, progress and treatment plans." data-ne="दीर्घकालीन रोग, प्रगति र उपचार योजनाको निरन्तर समीक्षा।">
-                Ongoing review of chronic conditions, progress and treatment plans.
-              </p>
-            </article>
-
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/cholesterol-heart-prevention.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Cholesterol & heart prevention" data-ne="कोलेस्ट्रोल र मुटुरोग रोकथाम">Cholesterol & heart prevention</h3>
-              <p data-en="Lipid-result review and cardiovascular risk-reduction guidance." data-ne="कोलेस्ट्रोल जाँचको समीक्षा र मुटुरोग जोखिम घटाउने मार्गदर्शन।">Lipid-result review and cardiovascular risk-reduction guidance.</p>
-            </article>
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/kidney-health.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Kidney health" data-ne="मिर्गौला स्वास्थ्य">Kidney health</h3>
-              <p data-en="Review of kidney-related symptoms, test results and medicine safety." data-ne="मिर्गौलासम्बन्धी लक्षण, जाँच नतिजा र औषधि सुरक्षाको समीक्षा।">Review of kidney-related symptoms, test results and medicine safety.</p>
-            </article>
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/weight-lifestyle.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Weight & lifestyle" data-ne="तौल र जीवनशैली">Weight & lifestyle</h3>
-              <p data-en="Sustainable advice on activity, nutrition and metabolic risk." data-ne="शारीरिक गतिविधि, पोषण र मेटाबोलिक जोखिमबारे दिगो सल्लाह।">Sustainable advice on activity, nutrition and metabolic risk.</p>
-            </article>
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/screening-prevention.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Screening & prevention" data-ne="स्क्रिनिङ र रोकथाम">Screening & prevention</h3>
-              <p data-en="Age- and risk-appropriate health checks and prevention planning." data-ne="उमेर र जोखिमअनुसार स्वास्थ्य जाँच तथा रोकथाम योजना।">Age- and risk-appropriate health checks and prevention planning.</p>
-            </article>
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/investigation-report-review.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Investigation & report review" data-ne="जाँच र रिपोर्ट समीक्षा">Investigation & report review</h3>
-              <p data-en="Clear explanations of relevant lab and investigation results in clinical context." data-ne="चिकित्सकीय अवस्थाअनुसार प्रयोगशाला तथा अन्य जाँच नतिजाको स्पष्ट व्याख्या।">Clear explanations of relevant lab and investigation results in clinical context.</p>
-            </article>
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/medication-review.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Medication review" data-ne="औषधि समीक्षा">Medication review</h3>
-              <p data-en="Review of treatment progress, side effects and medicine-use questions." data-ne="उपचार प्रगति, सम्भावित असर र औषधि प्रयोगसम्बन्धी प्रश्नहरूको समीक्षा।">Review of treatment progress, side effects and medicine-use questions.</p>
-            </article>
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/anaemia-blood-health.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Anaemia & blood health" data-ne="रक्तअल्पता र रगतको स्वास्थ्य">Anaemia & blood health</h3>
-              <p data-en="Assessment of common blood-count abnormalities and related symptoms." data-ne="सामान्य रक्त जाँच असामान्यता र सम्बन्धित लक्षणहरूको मूल्याङ्कन।">Assessment of common blood-count abnormalities and related symptoms.</p>
-            </article>
-            <article class="service-item service-extra" hidden>
-              <img class="service-icon" src="assets/service-images/adult-vaccination-guidance.webp" alt="" width="44" height="44" loading="lazy" />
-              <h3 data-en="Adult vaccination guidance" data-ne="वयस्क खोपसम्बन्धी मार्गदर्शन">Adult vaccination guidance</h3>
-              <p data-en="Discussion of age- and risk-appropriate vaccines during routine care." data-ne="नियमित सेवामा उमेर र जोखिमअनुसार उपयुक्त खोपबारे परामर्श।">Discussion of age- and risk-appropriate vaccines during routine care.</p>
-            </article>
-          </div>
+          <div class="service-grid" id="service-grid"></div>
+          <noscript><p class="scope-note">Please enable JavaScript to browse service details, or call +977 986 727 0022 for appointment information.</p></noscript>
           <button class="service-toggle" id="service-toggle" type="button" aria-controls="service-grid" aria-expanded="false">
             <span class="service-toggle-label" data-en="View all services" data-ne="सबै सेवाहरू हेर्नुहोस्">View all services</span>
             <span class="service-toggle-arrow" aria-hidden="true">↓</span>
@@ -390,9 +294,9 @@
               <h3 data-en="Education" data-ne="शिक्षा">Education</h3>
               <div class="timeline">
                 <article><span>2021—2024</span><h4>MD Internal Medicine</h4><p>Patan Academy of Health Sciences, Lalitpur</p><p class="entry-detail"><span data-en="First degree" data-ne="प्रथम श्रेणी">First degree</span><span class="achievement" data-en="Batch topper" data-ne="ब्याच प्रथम">Batch topper</span></p></article>
-                <article><span>2012—2017</span><h4>MBBS</h4><p>Lumbini Medical College, Palpa · Tribhuvan University</p><p class="entry-detail"><span data-en="First division" data-ne="प्रथम श्रेणी">First division</span><span class="achievement" data-en="Batch topper" data-ne="ब्याच प्रथम">Batch topper</span></p></article>
-                <article><span>2009—2011</span><h4>HSEB (+2 Science)</h4><p>Tilottama Higher Secondary School, Rupandehi</p><p class="entry-detail"><span data-en="Distinction" data-ne="विशिष्ट श्रेणी">Distinction</span><span class="achievement" data-en="Class topper" data-ne="कक्षा प्रथम">Class topper</span></p></article>
-                <article><span>2000—2009</span><h4 data-en="School level" data-ne="विद्यालय तह">School level</h4><p>Shree Sharada Secondary School, Arghakhanchi</p><p class="entry-detail"><span data-en="Distinction" data-ne="विशिष्ट श्रेणी">Distinction</span><span class="achievement" data-en="School & district topper" data-ne="विद्यालय र जिल्लामा प्रथम">School & district topper</span></p></article>
+                <article><span>2012—2017</span><h4>MBBS</h4><p>Lumbini Medical College, Palpa · Kathmandu University</p><p class="entry-detail"><span data-en="First division" data-ne="प्रथम श्रेणी">First division</span><span class="achievement" data-en="Batch topper" data-ne="ब्याच प्रथम">Batch topper</span></p></article>
+                <article><span>2009—2011</span><h4>HSEB (+2 Science)</h4><p>Tilottama Higher Secondary School, Rupandehi</p><p class="entry-detail"><span data-en="Distinction" data-ne="विशिष्ट श्रेणी">Distinction</span><span class="achievement" data-en="Batch topper" data-ne="ब्याच प्रथम">Batch topper</span></p></article>
+                <article><span>2000—2009</span><h4 data-en="School level" data-ne="विद्यालय तह">School level</h4><p>Shree Sharada Secondary School, Arghakhanchi</p><p class="entry-detail"><span data-en="Distinction" data-ne="विशिष्ट श्रेणी">Distinction</span><span class="achievement" data-en="School & district topper" data-ne="जिल्ला प्रथम">District topper</span></p></article>
               </div>
             </div>
             <div>
@@ -461,17 +365,17 @@
         <div class="container resource-grid">
           <div class="resource-copy">
             <p class="eyebrow" data-en="HEALTH LIBRARY" data-ne="स्वास्थ्य जानकारी">HEALTH LIBRARY</p>
-            <h2 data-en="Practical health information is coming soon." data-ne="व्यावहारिक स्वास्थ्य जानकारी चाँडै आउँदैछ।">
-              Practical health information is coming soon.
+            <h2 data-en="Practical health information for everyday decisions." data-ne="दैनिक स्वास्थ्य निर्णयका लागि उपयोगी जानकारी।">
+              Practical health information for everyday decisions.
             </h2>
-            <p data-en="Future articles will explain common questions in clear English and Nepali. Every article will be reviewed by Dr. Santosh before publication." data-ne="आगामी लेखहरूले सामान्य स्वास्थ्य प्रश्नहरू सरल नेपाली र अंग्रेजीमा बुझाउनेछन्। प्रकाशित गर्नुअघि हरेक लेख डा. सन्तोषले समीक्षा गर्नुहुनेछ।">
-              Future articles will explain common questions in clear English and Nepali. Every article will be reviewed by Dr. Santosh before publication.
+            <p data-en="Start with Dr. Santosh's bilingual guide to diabetes. More doctor-reviewed articles on common health questions will follow." data-ne="डा. सन्तोषको मधुमेहसम्बन्धी नेपाली र अंग्रेजी लेखबाट सुरु गर्नुहोस्। अन्य सामान्य स्वास्थ्य विषयका चिकित्सकद्वारा समीक्षा गरिएका लेख पछि थपिनेछन्।">
+              Start with Dr. Santosh's bilingual guide to diabetes. More doctor-reviewed articles on common health questions will follow.
             </p>
-            <span class="coming-badge" data-en="Doctor-reviewed content · Phase 2" data-ne="चिकित्सकद्वारा समीक्षा · दोस्रो चरण">Doctor-reviewed content · Phase 2</span>
+            <span class="coming-badge" data-en="Diabetes guide available · More topics coming" data-ne="मधुमेहको लेख उपलब्ध · अन्य विषय थपिँदैछन्">Diabetes guide available · More topics coming</span>
           </div>
           <div class="topic-list" aria-label="Planned health topics">
             <div><span>01</span><p data-en="Understanding blood pressure" data-ne="रक्तचाप बुझौँ">Understanding blood pressure</p></div>
-            <div><span>02</span><p data-en="Living well with diabetes" data-ne="मधुमेहसँग स्वस्थ जीवन">Living well with diabetes</p></div>
+            <div><span>02</span><a href="service.html?topic=diabetes-metabolic-health" data-en="Understanding diabetes →" data-ne="मधुमेह बुझौँ →">Understanding diabetes →</a></div>
             <div><span>03</span><p data-en="Thyroid tests, explained" data-ne="थाइराइड जाँचको अर्थ">Thyroid tests, explained</p></div>
             <div><span>04</span><p data-en="Medicines and follow-up" data-ne="औषधि र फलो-अप">Medicines and follow-up</p></div>
           </div>

@@ -9,6 +9,41 @@
   const closeDialog = document.querySelector(".dialog-close");
   const year = document.querySelector("#year");
   const serviceToggle = document.querySelector("#service-toggle");
+  const serviceGrid = document.querySelector("#service-grid");
+
+  if (serviceGrid && Array.isArray(window.SERVICES)) {
+    for (const service of window.SERVICES) {
+      const card = document.createElement("article");
+      card.className = service.featured ? "service-item" : "service-item service-extra";
+      if (!service.featured) card.hidden = true;
+
+      const link = document.createElement("a");
+      link.className = "service-card-link";
+      link.href = `service.html?topic=${encodeURIComponent(service.id)}`;
+
+      const icon = document.createElement("img");
+      icon.className = "service-icon";
+      icon.src = service.icon || `assets/service-images/${service.id}.webp`;
+      icon.alt = "";
+      icon.width = 44;
+      icon.height = 44;
+      if (!service.featured) icon.loading = "lazy";
+
+      const title = document.createElement("h3");
+      title.dataset.en = service.en.title;
+      title.dataset.ne = service.ne.title;
+      title.textContent = service.en.title;
+
+      const summary = document.createElement("p");
+      summary.dataset.en = service.en.summary;
+      summary.dataset.ne = service.ne.summary;
+      summary.textContent = service.en.summary;
+
+      link.append(icon, title, summary);
+      card.append(link);
+      serviceGrid.append(card);
+    }
+  }
   const serviceExtras = document.querySelectorAll(".service-extra");
   const query = new URLSearchParams(window.location.search);
   const requestedLanguage = query.get("lang");
@@ -50,6 +85,7 @@
     }
     setServicesExpanded(serviceToggle?.getAttribute("aria-expanded") === "true");
     localStorage.setItem("site-language", language);
+    document.dispatchEvent(new CustomEvent("site:languagechange", { detail: { language } }));
   }
 
   function closeMenu() {
